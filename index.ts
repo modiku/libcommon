@@ -6,6 +6,7 @@ interface User{
     authority:number
     date?:Date
     userAvaterUrl?:string
+    description?:string
 }
 
 interface myUser{
@@ -16,4 +17,6 @@ interface myUser{
     date?:Date
     myAuthority?:string
     userAvaterUrl?:string
+    description?:string
+
 }
