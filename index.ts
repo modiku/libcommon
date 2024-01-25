@@ -4,9 +4,10 @@ interface User{
     password:string
     name:string
     authority:number
-    date?:Date
-    userAvaterUrl?:string
-    description?:string
+    date:Date
+    userAvaterUrl:string
+    description:string
+    orders:Order[]
 }
 
 interface myUser{
@@ -25,11 +26,22 @@ interface Product{
     id: string
     name: string
     phone: string
-    imgUrl?: string
-    CarouselImg1?: string
-    CarouselImg2?: string
-    CarouselImg3?: string
-    description?: string
+    date:Date
+    imgUrl: string
+    CarouselImg1: string
+    CarouselImg2: string
+    CarouselImg3: string
+    description: string
+}
+
+interface Order{
+    id:string
+
+    products:Product[]
+
+    user:User
+
+    address:string
 }
 
 interface Query{
