@@ -18,5 +18,4 @@ interface myUser{
     myAuthority?:string
     userAvaterUrl?:string
     description?:string
-
 }
