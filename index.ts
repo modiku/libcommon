@@ -20,3 +20,18 @@ interface myUser{
     description?:string
 
 }
+
+interface Product{
+    id: string
+    name: string
+    phone: string
+    imgUrl?: string
+    CarouselImg1?: string
+    CarouselImg2?: string
+    CarouselImg3?: string
+    description?: string
+}
+
+interface Query{
+    keyWord:string
+}
