@@ -46,6 +46,7 @@ interface myProduct{
     CarouselImg2?: string
     CarouselImg3?: string
     description?: string
+    num?:number
 }
 
 interface Order{
