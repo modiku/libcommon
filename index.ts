@@ -62,3 +62,14 @@ interface Order{
 interface Query{
     keyWord:string
 }
+
+interface carProduct{
+    id:string
+
+    productId:string
+
+    num:number
+
+    price:number
+    
+}
