@@ -52,11 +52,35 @@ interface myProduct{
 interface Order{
     id:string
 
-    products:Product[]
+    carproducts:carProduct[]
 
     user:User
 
     address:string
+
+    consigneeName:string
+
+    consigneePhoneNumber:string
+
+    totalprice:number
+
+
+}
+
+interface myOrder{
+    id?:string
+    
+    carproducts?:carProduct[]
+    
+    user:myUser
+
+    address:string
+
+    consigneeName:string
+
+    consigneePhoneNumber:string
+
+    totalprice:number
 }
 
 interface Query{
@@ -66,10 +90,22 @@ interface Query{
 interface carProduct{
     id:string
 
-    productId:string
+    product:Product
 
     num:number
 
     price:number
     
+}
+
+interface myCarProduct{
+    id?:string
+
+    product:onlyProduct
+
+    num:number
+
+    price:number
+
+    order:onlyOrder
 }
