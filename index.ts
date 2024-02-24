@@ -30,6 +30,9 @@ interface Product{
 interface Order{
     id:string
 
+    date:string
+
+
     carproducts:carProduct[]
 
     user:User
@@ -59,6 +62,7 @@ interface carProduct{
     num:number
 
     price:number
+
     
 }
 
